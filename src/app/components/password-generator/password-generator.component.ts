@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FormControl, FormGroup} from '@angular/forms';
 
 @Component({
   selector: 'app-password-generator',
@@ -55,5 +56,14 @@ export class PasswordGeneratorComponent  {
       generatedPassword += validChar[index];
     }
     this.password = generatedPassword;
+  }
+
+  reset() {
+   this.passwordLength = 0;
+    this.includeLetters=false;
+    this.includeSymbols = false;
+    this.includeNumbers = false;
+    this.password = ''
+
   }
 }
