@@ -2,14 +2,18 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { PasswordGeneratorComponent } from './components/password-generator/password-generator.component';
+import {RouterModule} from '@angular/router';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PasswordGeneratorComponent
   ],
-  imports: [
-    BrowserModule
-  ],
+    imports: [
+        BrowserModule,
+        RouterModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
